@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>HDI Prediction</title>
+
+<style>
+
+body{
+background:#222;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+input,select{
+width:320px;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 25px;
+background:#28a745;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Human Development Index Prediction</h1>
+
+<form action="/predict" method="POST">
+
+<select name="country">
+
+<option value="0">Select Country</option>
+<option value="India">India</option>
+<option value="Australia">Australia</option>
+<option value="Canada">Canada</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Poland">Poland</option>
+
+</select>
+
+<br>
+
+<input type="text"
+name="life"
+placeholder="Life Expectancy">
+
+<br>
+
+<input type="text"
+name="school"
+placeholder="Mean Years of Schooling">
+
+<br>
+
+<input type="text"
+name="gni"
+placeholder="Gross National Income">
+
+<br>
+
+<input type="text"
+name="internet"
+placeholder="Internet Users">
+
+<br>
+
+<button type="submit">
+
+Predict
+
+</button>
+
+</form>
+
+</body>
+
+</html>
